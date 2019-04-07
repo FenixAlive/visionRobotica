@@ -18,11 +18,11 @@ clear;
 % Hx = [-1 0 1; -2 0 2; -1 0 1]
 % Hy = [-1 -2 -1; 0 0 0; 1 2 1]
 
-%im = zeros(350);
-%im(150:249,150:249)=255*ones(100);
+im = zeros(350);
+im(150:249,150:249)=255*ones(100);
 % im = imread('/media/angel/Data/personal/fenix.jpg');
-im = imread('~/Dropbox/135ls.jpg');
-im = rgb2gray(im);
+%im = imread('~/Dropbox/135ls.jpg');
+%im = rgb2gray(im);
 subplot(1,3,1)
 imshow(im);
 title("Imagen");
