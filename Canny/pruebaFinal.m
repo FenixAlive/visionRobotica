@@ -4,8 +4,8 @@ addpath('../algo6');
 addpath('../imbasic');
 
 %umbrales por histerisis 
-Fa = 0.037; %limite superior
-Fb = 0.03; %limite inferior
+Fa = 0.033; %limite superior
+Fb = 0.013; %limite inferior
 
 % imagen
 vid = videoinput('linuxvideo', 1);
@@ -13,9 +13,9 @@ set(vid, 'ReturnedColorSpace', 'grayscale');
 
 im = getsnapshot(vid);
 %im = filtro_mediana(im, 3);
-h = histograma(im);
-n = normalizada(h,im);
-im= ImEq(n,im,255,0);
+%h = histograma(im);
+%n = normalizada(h,im);
+%im= ImEq(n,im,255,0);
 
 subplot(1,2,1);
 imshow(im);

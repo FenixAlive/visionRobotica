@@ -13,8 +13,6 @@ grad = atan2(cy,cx);
 %se puede hacer con padarray(f,[m n]) %m n es el numero de ceros por rellenar
 imm = zeros(f+2,c+2);
 img = zeros(f+2,c+2);
-
-
 imm(2:f+1,2:c+1)=mag;
 img(2:f+1,2:c+1)=grad;
 [f,c]=size(imm);
